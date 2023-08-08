@@ -3,7 +3,7 @@ Unofficial ~~asyncio~~ sync python wrapper for the Our Groceries API. This libra
 ## Installation
 
 ```bash
-python -m pip install git+
+python -m pip install git+https://github.com/apepenkov/py-our-groceries-sync.git
 ```
 
 ## Usage
