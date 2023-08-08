@@ -1,15 +1,14 @@
-Unofficial asyncio python wrapper for the Our Groceries API. This library requires `Python >=3.5`.
+Unofficial ~~asyncio~~ sync python wrapper for the Our Groceries API. This library requires `Python >=3.5`.
 
 ## Installation
 
 ```bash
-pip install ourgroceries
+python setup.py install
 ```
 
 ## Usage
 
 ```
-import asyncio
 from ourgroceries import OurGroceries
 
 username = ''
@@ -17,13 +16,12 @@ password = ''
 
 og = OurGroceries(username, password)
 
-loop = asyncio.get_event_loop()
-loop.run_until_complete(og.login())
+og.login()
 
-my_lists = loop.run_until_complete(og.get_my_lists())
+my_lists = og.get_my_lists()
 print(my_lists)
 
-my_todo_list = loop.run_until_complete(og.get_list_items(list_id=''))
+my_todo_list = og.get_list_items(list_id='')
 print(my_todo_list)
 ```
 

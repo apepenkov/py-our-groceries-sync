@@ -1,26 +1,26 @@
 from setuptools import setup, find_packages
 
-PACKAGES = find_packages(exclude=['tests', 'tests.*'])
+PACKAGES = find_packages(exclude=["tests", "tests.*"])
 
 REQUIRES = [
-    'aiohttp>=3.6.1',
-    'beautifulsoup4>=4.7.1'
+    "beautifulsoup4>=4.7.1",
+    "requests>=2.21.0",
 ]
 
 setup(
-    name='ourgroceries',
-    version='1.5.3',
+    name="ourgroceries_sync",
+    version="1.5.3",
     author="Leonardo Merza",
     author_email="ljmerza@gmail.com",
-    keywords='unoffical our groceries api',
+    keywords="unoffical our groceries api",
     description="Our Groceries Unofficial Python Package",
-    long_description=open('README.md').read(),
+    long_description=open("README.md").read(),
     long_description_content_type="text/markdown",
     url="https://github.com/ljmerza/py-our-groceries",
-    license='MIT',
+    license="MIT",
     packages=PACKAGES,
     include_package_data=True,
-    python_requires='>=3.5',
+    python_requires=">=3.5",
     zip_safe=False,
     install_requires=REQUIRES,
     classifiers=[

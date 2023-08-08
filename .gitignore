@@ -1,6 +1,7 @@
 build/
 dist/
-ourgroceries.egg-info/
+ourgroceries_sync.egg-info
+.idea/
 
 *.pyc
 __pycache__/
