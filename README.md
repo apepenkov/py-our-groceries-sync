@@ -3,13 +3,13 @@ Unofficial ~~asyncio~~ sync python wrapper for the Our Groceries API. This libra
 ## Installation
 
 ```bash
-python setup.py install
+python -m pip install git+
 ```
 
 ## Usage
 
 ```
-from ourgroceries import OurGroceries
+from ourgroceries_sync import OurGroceries
 
 username = ''
 password = ''
